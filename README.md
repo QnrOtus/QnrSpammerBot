@@ -2,7 +2,7 @@
   <b> ╔»⟦★𝗤𝗡𝗥★⟧«╗ SᑭᗩᗰᗰEᖇ ᗷOT </b>
 </h1>
 <h1 align="center">
-  <b>Ꭺ ᏢϴᏔᎬᎡҒႮᏞ ՏᏢᎪᎷ ႮՏᎬᎡᏴϴͲ ᏔᎻᏆᏟᎻ ᏔϴᎡᏦ ϴΝ ͲᎬᏞᎬᏀᎡᎪᎷ ᏴᎪՏᎬᎠ ϴΝ ͲᎬᏞᎬͲᎻϴΝ. ᏴᎽ ᎠᎬᏢᏞϴᎽᏆΝᏀ/ᎻϴՏͲᏆΝᏀ ͲᎻᏆՏ Ⴎ ᏟᎪΝ ՏᏢᎪᎷ ϴΝ ͲᎬᏞᎬᏀᎡᎪᎷ ᏴᎽ ϴΝᎬ ᏟϴᎷᎷᎪΝᎠ Ͳϴ 30 ᎪᏟᏟϴႮΝͲ ᎪͲ ϴΝᎬ ͲᏆᎷᎬ.</b>
+  <b>Ꭺ ᏢϴᏔᎬᎡҒႮᏞ SᑭᗩᗰᗰEᖇ ᗷOT ᏔᎻᏆᏟᎻ ᏔϴᎡᏦ ϴΝ TᎬᏞᎬᏀᎡᎪᎷ ᏴᎪՏᎬᎠ OΝ TᎬᏞᎬTᎻOΝ. ᏴᎽ ᎠᎬᏢᏞϴᎽᏆΝᏀ/ᎻOՏTᏆΝᏀ TᎻᏆՏ Ⴎ ᏟᎪΝ ՏᏢᎪᎷ OΝ TᎬᏞᎬᏀᎡᎪᎷ ᏴᎽ OΝᎬ ᏟOᎷᎷᎪΝᎠ Ͳϴ 30 ᎪᏟᏟϴႮΝͲ ᎪT OΝᎬ TᏆᎷᎬ.</b>
 </h1>
 <p align="center">
   <img src="https://telegra.ph/file/1ecd72d276cfffb731ee0.jpg" alt="QNR SPAMBOT">
@@ -34,10 +34,10 @@ Any queries or issue contact
 - [![GenerateString](https://img.shields.io/badge/DM%20ON%20TELEGRAM-blueviolet?style=for-the-badge&logo=telegram)](https://t.me/nouseridfound_bot)
 
 ## Telegram 🏪
-- [![Telegram Group](https://img.shields.io/badge/Telegram-Group-brightgreen)](https://t.me/BERLINGODSPAM)
-- [![Telegram Channel](https://img.shields.io/badge/Telegram-Channel-brightgreen)](https://t.me/BERLINSPAMM)
+- [![Telegram Group](https://img.shields.io/badge/Telegram-Group-brightgreen)](https://t.me/QnrOtusChat)
+- [![Telegram Channel](https://img.shields.io/badge/Telegram-Channel-brightgreen)](https://t.me/Qnr_Otus)
 
 ------
 ## CREDITS
-- [TEAM YUKKI](https://github.com/notreallyshikhar)
-- [LONE-WOLF](https://github.com/Lone-Wolf250)
+- [QNR-OFIICIAL](https://t.me/UnSupportedName)
+- [TEAM-ROOD](https://t.me/Rood_Gamer)
