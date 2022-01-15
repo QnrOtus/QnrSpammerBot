@@ -36,5 +36,5 @@ Any queries or issue contact
 
 ------
 ## CREDITS
-- [QNR-OFIICIAL](https://t.me/UnSupportedName)
-- [TEAM-ROOD](https://t.me/Rood_Gamer)
+- [QNR-Official](https://t.me/UnSupportedName)
+- [Team-Rood](https://t.me/Rood_Gamer)
