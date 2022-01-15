@@ -1,1 +1,1 @@
-worker: python3 QnrOtus.py
+worker: python3 qnrotus.py
