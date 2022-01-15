@@ -929,7 +929,7 @@ async def gifspam(e, smex):
 @str29.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
 @str30.on(events.NewMessage(incoming=True, pattern=r"\.bio"))        
 async def _(e):
-    usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 【﻿---𝗕𝗶𝗼---】\n\n【﻿Command :-】\n\n.bio <Message to set Bio of Userbot accounts>"
+    usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 【﻿×××𝗕𝗶𝗼×××】\n【﻿𝘾𝙤𝙢𝙢𝙖𝙣𝙙 :】\n\n.bio <Message to set Bio of Userbot accounts>"
     if e.sender_id in SMEX_USERS:
         yukki = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)     
         if len(e.text) > 5:
@@ -975,7 +975,7 @@ async def _(e):
 @str29.on(events.NewMessage(incoming=True, pattern=r"\.join"))
 @str30.on(events.NewMessage(incoming=True, pattern=r"\.join"))       
 async def _(e):
-    usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 【﻿---𝗝𝗼𝗶𝗻---】\n\n【﻿Command :-】\n\n.join <Public Channel or Group Link/Username>"
+    usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 【﻿×××𝗝𝗼𝗶𝗻×××】\n【﻿𝘾𝙤𝙢𝙢𝙖𝙣𝙙 :】\n\n.join <Public Channel or Group Link/Username>"
     if e.sender_id in SMEX_USERS:
         yukki = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
         if len(e.text) > 6:
@@ -1021,7 +1021,7 @@ async def _(e):
 @str29.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
 @str30.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))        
 async def _(e):
-    usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 【﻿---𝗣𝗿𝗶𝘃𝗮𝘁𝗲 𝗝𝗼𝗶𝗻---】\n\n【﻿Command :-】\n\n.pjoin <Private Channel or Group's access hash>\n\nExample :\nLink = https://t.me/joinchat/HGYs1wvsPUplMmM1\n\n.pjoin HGYs1wvsPUplMmM1"
+    usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 【﻿×××𝗣𝗿𝗶𝘃𝗮𝘁𝗲 𝗝𝗼𝗶𝗻×××】\n【﻿𝘾𝙤𝙢𝙢𝙖𝙣𝙙 :】\n\n.pjoin <Private Channel or Group's access hash>\n\nExample :\nLink = https://t.me/joinchat/HGYs1wvsPUplMmM1\n\n.pjoin HGYs1wvsPUplMmM1"
     if e.sender_id in SMEX_USERS:
         yukki = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
         if len(e.text) > 7:
@@ -1068,7 +1068,7 @@ async def _(e):
 @str29.on(events.NewMessage(incoming=True, pattern=r"\.leave"))
 @str30.on(events.NewMessage(incoming=True, pattern=r"\.leave"))       
 async def _(e):
-    usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 【﻿---𝗟𝗲𝗮𝘃𝗲---】\n\n【﻿Command :-】\n\n.leave <Channel or Chat ID>"
+    usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 【﻿×××𝗟𝗲𝗮𝘃𝗲×××】\n【﻿𝘾𝙤𝙢𝙢𝙖𝙣𝙙 :】\n\n.leave <Channel or Chat ID>"
     if e.sender_id in SMEX_USERS:
         yukki = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
         if len(e.text) > 7:
@@ -1118,7 +1118,7 @@ async def _(e):
 @str29.on(events.NewMessage(incoming=True, pattern=r"\.spam"))
 @str30.on(events.NewMessage(incoming=True, pattern=r"\.spam"))
 async def spam(e):
-    usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 【﻿---𝗦𝗽𝗮𝗺---】\n\n【﻿Command :-】\n\n.spam <count> <message to spam>\n\n.spam <count> <reply to a message>\n\nCount must be a integer."
+    usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 【﻿×××𝗦𝗽𝗮𝗺×××】\n【﻿𝘾𝙤𝙢𝙢𝙖𝙣𝙙 :】\n\n.spam <count> <message to spam>\n\n.spam <count> <reply to a message>\n\nCount must be a integer."
     error = "Spam Module can only be used till 100 count. For bigger spams use BigSpam."
     if e.sender_id in SMEX_USERS:
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
@@ -1179,7 +1179,7 @@ async def spam(e):
 @str29.on(events.NewMessage(incoming=True, pattern=r"\.delayspam"))
 @str30.on(events.NewMessage(incoming=True, pattern=r"\.delayspam"))
 async def spam(e):
-    usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 【﻿---𝗗𝗲𝗹𝗮𝘆𝗦𝗽𝗮𝗺---】\n\n【﻿Command :-】\n\n.delayspam <sleep time> <count> <message to spam>\n\n.delayspam <sleep time> <count> <reply to a message>\n\nCount and Sleeptime must be a integer."
+    usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 【﻿×××𝗗𝗲𝗹𝗮𝘆𝗦𝗽𝗮𝗺×××】\n【﻿𝘾𝙤𝙢𝙢𝙖𝙣𝙙 :】\n\n.delayspam <sleep time> <count> <message to spam>\n\n.delayspam <sleep time> <count> <reply to a message>\n\nCount and Sleeptime must be a integer."
     if e.sender_id in SMEX_USERS:
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
             return await e.reply(usage, parse_mode=None, link_preview=None )
@@ -1248,7 +1248,7 @@ async def spam(e):
 @str29.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
 @str30.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
 async def spam(e):
-    usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 【﻿---𝗕𝗶𝗴𝗦𝗽𝗮𝗺---】\n\n【﻿Command :-】\n\n.bigspam <count> <message to spam>\n\n.bigspam <count> <reply to a message>\n\nCount must be a integer."
+    usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 【﻿×××𝗕𝗶𝗴𝗦𝗽𝗮𝗺×××】\n【﻿𝘾𝙤𝙢𝙢𝙖𝙣𝙙 :】\n\n.bigspam <count> <message to spam>\n\n.bigspam <count> <reply to a message>\n\nCount must be a integer."
     if e.sender_id in SMEX_USERS:
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
             return await e.reply(usage, parse_mode=None, link_preview=None )
@@ -1313,7 +1313,7 @@ async def spam(e):
 @str29.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
 @str30.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
 async def spam(e):
-    usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 【﻿---𝗥𝗮𝗶𝗱---】\n\n【﻿Command :-】\n\n.raid <count> <Username of User>\n\n.raid <count> <reply to a User>\n\nCount must be a integer."
+    usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 【﻿×××𝗥𝗮𝗶𝗱×××】\n【﻿𝘾𝙤𝙢𝙢𝙖𝙣𝙙 :】\n\n.raid <count> <Username of User>\n\n.raid <count> <reply to a User>\n\nCount must be a integer."
     if e.sender_id in SMEX_USERS:
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
             return await e.reply(usage, parse_mode=None, link_preview=None )
@@ -1430,7 +1430,7 @@ async def _(event):
 @str30.on(events.NewMessage(incoming=True, pattern=r"\.replyraid"))
 async def _(e):
     global que
-    usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗥𝗲𝗽𝗹𝘆𝗥𝗮𝗶𝗱\n\nCommand:\n\n.replyraid <Username of User>\n\n.replyraid <reply to a User>"
+    usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 【﻿×××𝗥𝗲𝗽𝗹𝘆𝗥𝗮𝗶𝗱×××】\n\n【﻿𝘾𝙤𝙢𝙢𝙖𝙣𝙙 :】\n\n.replyraid <Username of User>\n\n.replyraid <reply to a User>"
     if e.sender_id in SMEX_USERS:
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
             return await e.reply(usage, parse_mode=None, link_preview=None )
@@ -1492,7 +1492,7 @@ async def _(e):
 @str30.on(events.NewMessage(incoming=True, pattern=r"\.dreplyraid"))
 async def _(e):
     global que
-    usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 【﻿---𝗗𝗲𝗮𝗰𝘁𝗶𝘃𝗮𝘁𝗲 𝗥𝗲𝗽𝗹𝘆𝗥𝗮𝗶𝗱---】\n\n【﻿Command :-】\n\n.dreplyraid <Username of User>\n\n.dreplyraid <reply to a User>"
+    usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 【﻿×××𝗗𝗲𝗮𝗰𝘁𝗶𝘃𝗮𝘁𝗲 𝗥𝗲𝗽𝗹𝘆𝗥𝗮𝗶𝗱×××】\n【﻿Command :】\n\n.dreplyraid <Username of User>\n\n.dreplyraid <reply to a User>"
     if e.sender_id in SMEX_USERS:
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
             return await e.reply(usage, parse_mode=None, link_preview=None )
@@ -1763,7 +1763,7 @@ async def restart(e):
 @str30.on(events.NewMessage(incoming=True, pattern=r"\.help"))
 async def help(e):
     if e.sender_id in SMEX_USERS:
-       text = "【﻿--- 𝗔𝘃𝗮𝗶𝗹𝗮𝗯𝗹𝗲 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀--- 】\n\n【﻿𝘾𝙤𝙢𝙢𝙖𝙣𝙙 :-】\n.ping\n.restart\n.join\n.pjoin\n.leave\n\n【﻿𝙎𝙥𝙖𝙢 𝘾𝙤𝙢𝙢𝙖𝙣𝙙 :-】\n.raid\n.replyraid\n.dreplyraid\n.spam\n.bigspam\n.delayspam\nFor More Help Regarding Usage Of Plugins Type Plugins Name"
+       text = "【﻿×××𝗔𝘃𝗮𝗶𝗹𝗮𝗯𝗹𝗲 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀×××】\n\n【﻿𝘾𝙤𝙢𝙢𝙖𝙣𝙙 :】\n.ping\n.restart\n.join\n.pjoin\n.leave\n\n【﻿𝙎𝙥𝙖𝙢 𝘾𝙤𝙢𝙢𝙖𝙣𝙙 :】\n.raid\n.replyraid\n.dreplyraid\n.spam\n.bigspam\n.delayspam\nFor More Help Regarding Usage Of Plugins Type Plugins Name"
        await e.reply(text, parse_mode=None, link_preview=None )
 
         
