@@ -1,7 +1,6 @@
 import os
 import sys
 import random
-import git
 from datetime import datetime
 from os import execl
 from telethon import TelegramClient, events
