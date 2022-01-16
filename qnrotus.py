@@ -1,18 +1,26 @@
 import os
 import sys
 import random
+import git
 from datetime import datetime
 from os import execl
 from telethon import TelegramClient, events
 from telethon.sessions import StringSession
 from telethon.tl.functions.account import UpdateProfileRequest
-from Config import STRING, SUDO, BIO_MESSAGE, API_ID, API_HASH, STRING2, STRING3, STRING4 ,STRING5, STRING6, STRING7, STRING8 ,STRING9, STRING10, STRING11, STRING12, STRING13, STRING14, STRING15, STRING16, STRING17, STRING18, STRING19, STRING20, STRING21, STRING22, STRING23, STRING24, STRING25, STRING26, STRING27, STRING28, STRING29, STRING30
+from Config import STRING, SUDO, BIO_MESSAGE, API_ID, API_HASH, STRING2, STRING3, STRING4 ,STRING5, STRING6, STRING7, STRING8 ,STRING9, STRING10, STRING11, STRING12, STRING13, STRING14, STRING15, STRING16, STRING17, STRING18, STRING19, STRING20, STRING21, STRING22, STRING23, STRING24, STRING25, STRING26, STRING27, STRING28, STRING29, STRING30, HEROKU_APP_NAME, HEROKU_API_KEY
 import asyncio
 import telethon.utils
 from telethon.tl import functions
 from telethon.tl.functions.channels import LeaveChannelRequest
 from telethon.tl.functions.messages import ImportChatInviteRequest
 from Utils import RAID, RRAID
+
+import heroku3
+from telethon.tl.functions.users import GetFullUserRequest
+
+Heroku = heroku3.from_key(HEROKU_API_KEY)
+heroku_api = "https://api.heroku.com"
+sudousers = os.environ.get("SUDO_USERS", None)
 
 
 a = API_ID
@@ -1566,8 +1574,74 @@ async def ping(e):
 
 
 
+@str1.on(events.NewMessage(incoming=True, pattern=r"\.addsudo"))
+@str2.on(events.NewMessage(incoming=True, pattern=r"\.addsudo"))
+@str3.on(events.NewMessage(incoming=True, pattern=r"\.addsudo"))
+@str4.on(events.NewMessage(incoming=True, pattern=r"\.addsudo"))
+@str5.on(events.NewMessage(incoming=True, pattern=r"\.addsudo"))
+@str6.on(events.NewMessage(incoming=True, pattern=r"\.addsudo"))
+@str7.on(events.NewMessage(incoming=True, pattern=r"\.addsudo"))
+@str8.on(events.NewMessage(incoming=True, pattern=r"\.addsudo"))
+@str9.on(events.NewMessage(incoming=True, pattern=r"\.addsudo"))
+@str10.on(events.NewMessage(incoming=True, pattern=r"\.addsudo"))
+@str11.on(events.NewMessage(incoming=True, pattern=r"\.addsudo"))
+@str12.on(events.NewMessage(incoming=True, pattern=r"\.addsudo"))
+@str13.on(events.NewMessage(incoming=True, pattern=r"\.addsudo"))
+@str14.on(events.NewMessage(incoming=True, pattern=r"\.addsudo"))
+@str15.on(events.NewMessage(incoming=True, pattern=r"\.addsudo"))
+@str16.on(events.NewMessage(incoming=True, pattern=r"\.addsudo"))
+@str17.on(events.NewMessage(incoming=True, pattern=r"\.addsudo"))
+@str18.on(events.NewMessage(incoming=True, pattern=r"\.addsudo"))
+@str19.on(events.NewMessage(incoming=True, pattern=r"\.addsudo"))
+@str20.on(events.NewMessage(incoming=True, pattern=r"\.addsudo"))
+@str21.on(events.NewMessage(incoming=True, pattern=r"\.addsudo"))
+@str22.on(events.NewMessage(incoming=True, pattern=r"\.addsudo"))
+@str23.on(events.NewMessage(incoming=True, pattern=r"\.addsudo"))
+@str24.on(events.NewMessage(incoming=True, pattern=r"\.addsudo"))
+@str25.on(events.NewMessage(incoming=True, pattern=r"\.addsudo"))
+@str26.on(events.NewMessage(incoming=True, pattern=r"\.addsudo"))
+@str27.on(events.NewMessage(incoming=True, pattern=r"\.addsudo"))
+@str28.on(events.NewMessage(incoming=True, pattern=r"\.addsudo"))
+@str29.on(events.NewMessage(incoming=True, pattern=r"\.addsudo"))
+@str30.on(events.NewMessage(incoming=True, pattern=r"\.addsudo"))        
+async def tb(event):
+    if event.sender_id in SMEX_USERS:
+        ok = await event.reply("Adding user as a sudo...")
+        rizoel = "SUDO_USER"
+        if HEROKU_APP_NAME is not None:
+            app = Heroku.app(HEROKU_APP_NAME)
+        else:
+            await ok.edit("`[HEROKU]:" "\nPlease setup your` **HEROKU_APP_NAME**")
+            return
+        heroku_var = app.config()
+        if event is None:
+            return
+        try:
+            target = await get_user(event)
+        except Exception:
+            await ok.edit(f"Reply to a user.")
+        if sudousers:
+            newsudo = f"{sudousers} {target}"
+        else:
+            newsudo = f"{target}"
+        await ok.edit(f"**Added `{target}` ** as a sudo user 🔱 Restarting.. Please wait a minute...")
+        heroku_var[rizoel] = newsudo
+
         
-        
+
+async def get_user(event):
+    if event.reply_to_msg_id:
+        previous_message = await event.get_reply_message()
+        if previous_message.forward:
+            replied_user = await event.client(
+                GetFullUserRequest(previous_message.forward.sender_id)
+            )
+        else:
+            replied_user = await event.client(
+                GetFullUserRequest(previous_message.sender_id)
+            )
+    target = replied_user.user.id
+    return target       
 
 @str1.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
 @str2.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
